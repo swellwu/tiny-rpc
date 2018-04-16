@@ -1,17 +1,14 @@
 package com.alibaba.middleware.race.rpc.netty;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.atomic.AtomicLong;
-
 import com.alibaba.middleware.race.rpc.async.ResponseCallbackListener;
-import com.alibaba.middleware.race.rpc.model.RpcRequest;
 import com.alibaba.middleware.race.rpc.model.RpcResponse;
 import com.alibaba.middleware.race.rpc.serializer.KryoSerialization;
 import com.alibaba.middleware.race.rpc.tool.ByteObjConverter;
-
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RpcClientHandler extends ChannelInboundHandlerAdapter {
     private static byte[] cacheName = null;

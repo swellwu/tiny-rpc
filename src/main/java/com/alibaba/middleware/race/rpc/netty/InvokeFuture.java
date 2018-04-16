@@ -84,6 +84,8 @@ public class InvokeFuture<T> {
 		}
 	}
 }
+
+
 interface InvokeListener<T> {
 
 	void success(T t);

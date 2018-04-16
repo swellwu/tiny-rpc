@@ -31,7 +31,7 @@ public class ResponseFuture {
         }
     }
 
-    public static void setFuture(Future<Object> future){
+    public static void setFuture(Future<Object> future) {
         futureThreadLocal.set(future);
     }
 }

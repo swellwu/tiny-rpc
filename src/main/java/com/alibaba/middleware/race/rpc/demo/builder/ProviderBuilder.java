@@ -8,7 +8,7 @@ import com.alibaba.middleware.race.rpc.demo.service.RaceTestServiceImpl;
  * Created by huangsheng.hs on 2015/3/26.
  */
 public class ProviderBuilder {
-    public static void buildProvider(){
+    public static void buildProvider() {
         publish();
     }
 
@@ -22,7 +22,7 @@ public class ProviderBuilder {
             e.printStackTrace();
         }
 
-        if(rpcProvider == null){
+        if (rpcProvider == null) {
             System.out.println("Start Rpc Provider failed.");
             System.exit(1);
         }
@@ -40,7 +40,7 @@ public class ProviderBuilder {
         }
     }
 
-    private static Class<?> getProviderImplClass(){
+    private static Class<?> getProviderImplClass() {
         try {
             return Class.forName("com.alibaba.middleware.race.rpc.api.impl.RpcProviderImpl");
         } catch (ClassNotFoundException e) {

@@ -8,11 +8,11 @@ import java.io.StringWriter;
  */
 public class ExceptionUtil {
     /**
-     * È¡µÃÒì³£µÄstacktrace×Ö·û´®¡£
+     * å–å¾—å¼‚å¸¸çš„stacktraceå­—ç¬¦ä¸²ã€‚
      *
-     * @param throwable Òì³£
+     * @param throwable å¼‚å¸¸
      *
-     * @return stacktrace×Ö·û´®
+     * @return stacktraceå­—ç¬¦ä¸²
      */
     public static String getStackTrace(Throwable throwable) {
         StringWriter buffer = new StringWriter();

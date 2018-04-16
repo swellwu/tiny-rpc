@@ -12,6 +12,7 @@ import java.lang.reflect.Proxy;
  */
 public class RpcConsumer implements InvocationHandler {
     private Class<?> interfaceClazz;
+
     public RpcConsumer() {
     }
 
@@ -61,6 +62,7 @@ public class RpcConsumer implements InvocationHandler {
 
     /**
      * register a consumer hook to this service
+     *
      * @param hook
      * @return
      */
@@ -75,7 +77,7 @@ public class RpcConsumer implements InvocationHandler {
      */
     public Object instance() {
         //TODO return an Proxy
-        return Proxy.newProxyInstance(this.getClass().getClassLoader(),new Class[]{this.interfaceClazz},this);
+        return Proxy.newProxyInstance(this.getClass().getClassLoader(), new Class[]{this.interfaceClazz}, this);
     }
 
     /**

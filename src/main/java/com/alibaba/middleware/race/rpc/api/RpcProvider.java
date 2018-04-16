@@ -5,56 +5,62 @@ package com.alibaba.middleware.race.rpc.api;
  */
 public class RpcProvider {
 
-    public RpcProvider() {}
+    public RpcProvider() {
+    }
 
     /**
      * init Provider
      */
-    private void init(){
+    private void init() {
         //TODO
     }
 
     /**
      * set the interface which this provider want to expose as a service
+     *
      * @param serviceInterface
      */
-    public RpcProvider serviceInterface(Class<?> serviceInterface){
+    public RpcProvider serviceInterface(Class<?> serviceInterface) {
         //TODO
         return this;
     }
 
     /**
      * set the version of the service
+     *
      * @param version
      */
-    public RpcProvider version(String version){
+    public RpcProvider version(String version) {
         //TODO
         return this;
     }
 
     /**
      * set the instance which implements the service's interface
+     *
      * @param serviceInstance
      */
-    public RpcProvider impl(Object serviceInstance){
+    public RpcProvider impl(Object serviceInstance) {
         //TODO
         return this;
     }
 
     /**
      * set the timeout of the service
+     *
      * @param timeout
      */
-    public RpcProvider timeout(int timeout){
+    public RpcProvider timeout(int timeout) {
         //TODO
         return this;
     }
 
     /**
      * set serialize type of this service
+     *
      * @param serializeType
      */
-    public RpcProvider serializeType(String serializeType){
+    public RpcProvider serializeType(String serializeType) {
         //TODO
         return this;
     }

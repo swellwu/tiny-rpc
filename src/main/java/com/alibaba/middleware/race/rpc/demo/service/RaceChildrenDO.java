@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by huangsheng.hs on 2015/3/26.
  */
-public class RaceChildrenDO implements Serializable{
+public class RaceChildrenDO implements Serializable {
     static private final long serialVersionUID = -4364586436171722421L;
     private int childNum;
     private Long longValue;
@@ -18,7 +18,7 @@ public class RaceChildrenDO implements Serializable{
     }
 
     @Override
-    public boolean equals(Object obj){
+    public boolean equals(Object obj) {
         if (this == obj)
             return true;
         if (obj == null)
@@ -27,22 +27,22 @@ public class RaceChildrenDO implements Serializable{
             return false;
         RaceChildrenDO other = (RaceChildrenDO) obj;
 
-        if( childNum != other.getChildNum())
+        if (childNum != other.getChildNum())
             return false;
 
         if (longValue == null) {
-            if (other.getLongValue()!= null)
+            if (other.getLongValue() != null)
                 return false;
-        } else{
-            if(other.getLongValue() == null)
+        } else {
+            if (other.getLongValue() == null)
                 return false;
             else if (!longValue.equals(other.getLongValue()))
                 return false;
         }
 
         char[] otherChars = other.getChars();
-        for(int i = 0 ; i < chars.length ; i++){
-            if(chars[i] != otherChars[i])
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] != otherChars[i])
                 return false;
         }
 
